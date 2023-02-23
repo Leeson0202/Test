@@ -1,2 +1,12 @@
-package com.example.test.controller;public class Test {
+package com.example.test.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Test {
+    @RequestMapping("test")
+    public String test(){
+        return "Its work";
+    }
 }
